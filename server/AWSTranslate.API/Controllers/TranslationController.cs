@@ -74,6 +74,22 @@ namespace AWSTranslate.API.Controllers
             }
         }
 
+        [HttpPut]
+        [Route("Update-key")]
+        public async Task<IActionResult> UpdateKey([FromBody] UpdateKey updateKey)
+        {
+            var res = await client.GetAsync(updateKey.newKey);
+            Dictionary<string, string> data = JsonConvert.DeserializeObject<Dictionary<string, string>>(res.Body.ToString());
+
+            if (data.ContainsKey(updateKey.existingKey))
+            {
+                data[updateKey.existingKey] = updateKey.newKey;
+            }
+
+            var res2 = await client.UpdateAsync(updateKey.pathLanguage, data);
+            return Ok(data);
+        }
+
 
 
         [HttpPut]
