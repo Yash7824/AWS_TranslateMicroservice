@@ -1,0 +1,125 @@
+<app-navbar></app-navbar>
+
+<main>
+
+    <div class="messageDisplayed">
+        <marquee behavior="scroll" direction="left">Announcement: We are also live with Hindi and Tamil languages. You
+            can select your preference through change language option.</marquee>
+
+    </div>
+
+    <div class="container mainPage">
+
+        <div class="mainLinks">
+            <ul class="nav " id="myTab" role="tablist" *ngFor="let text of allWords.slice(1,11); 
+            let i = index">
+
+                <li class="nav-item singleItem" role="presentation" (click)="clickTab(i)"
+                    [ngClass]="{'activeLi': step === i}">
+                    <button class="nav-link active buttonItem" id="home-tab" type="button">{{text}}</button>
+                </li>
+
+            </ul>
+
+
+            <div *ngIf="step === 0" class="Tab--presentation">
+                <div class="tab--header">
+                    <div id="Quote">
+                        <span>{{allWords[1]}}</span>
+                    </div>
+
+                    <div class="tab--header--radios">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="New" checked>
+                            <label class="form-check-label" for="New">
+                                {{allWords[35]}}
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Rollover">
+                            <label class="form-check-label" for="Rollover">
+                                {{allWords[36]}}
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Used">
+                            <label class="form-check-label" for="Used">
+                                {{allWords[37]}}
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>{{allWords[38]}}</span>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="checkbox-label">
+                            <span>Yes</span>
+                            <span>No</span>
+                            <span class="ball"></span>
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="tab--content">
+                    <div class="tab--content--head">
+                        <span>{{allWords[41]}}</span>
+
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="" id="Yes" name="opt">
+                            <label class="form-check-label" for="Yes">
+                                Yes
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="" id="No" name="opt">
+                            <label class="form-check-label" for="No">
+                                No
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="tab--content--main">
+                        <div class="mb-3">
+                            <label for="registrationNo" class="form-label">{{allWords[43]}}*</label>
+                            <input type="text" class="form-control" id="registrationNo" placeholder="Enter Registration No.">
+                          </div>
+
+                          <div>
+                            <button type="button" class="btn btn-primary vehicleDetails">{{allWords[47]}}</button>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="selectLanguage select-wrapper">
+        <select class="form-select" (change)="onChangeHandler($event)" id="dropdown">Select Language 
+            <option value={{english}}>English</option>
+            <option value={{hindi}}>Hindi</option>
+            <option value={{marathi}}>Marathi</option>
+            <option value={{gujarati}}>Gujarati</option>
+            <option value={{tamil}}>Tamil</option>
+            <option value={{telugu}}>Telugu</option>
+           
+         
+        </select>
+    </div>
+
+
+</main>

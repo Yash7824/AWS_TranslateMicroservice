@@ -1,0 +1,47 @@
+.customNav{
+    background-image: linear-gradient(to bottom, #f0863b, #e66f2c, #db561e, #d03a13, #c40b0b);
+    height: 70px;
+ 
+}
+
+
+.logo {
+    width: 180px;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-left: 270px;
+}
+
+.Wallet--Balance{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid orange;
+    border-radius: 10px;
+    margin-right: 1000px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    padding: 0 5px;
+    background-color: rgba(238, 113, 17, 0.858);
+    font-size: 13px;
+    width: 6vw;
+    margin-bottom: 45px;
+}
+
+.User{
+    display: flex;
+    border: 1px solid orange;
+    border-radius: 50px;
+    padding: 5px;
+    width: 130px;
+    position: absolute;
+    top: 10px;
+    left: 960px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+}

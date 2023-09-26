@@ -1,0 +1,117 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\yashr\\Yash\\IL_Nysa\\Multilingual_Microservice\\Implementations\\Multilingual_Amazon\\server\\AWSTranslate.API\\AWSTranslate.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\yashr\\Yash\\IL_Nysa\\Multilingual_Microservice\\Implementations\\Multilingual_Amazon\\server\\AWSTranslate.API\\AWSTranslate.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yashr\\Yash\\IL_Nysa\\Multilingual_Microservice\\Implementations\\Multilingual_Amazon\\server\\AWSTranslate.API\\AWSTranslate.API.csproj",
+        "projectName": "AWSTranslate.API",
+        "projectPath": "C:\\Users\\yashr\\Yash\\IL_Nysa\\Multilingual_Microservice\\Implementations\\Multilingual_Amazon\\server\\AWSTranslate.API\\AWSTranslate.API.csproj",
+        "packagesPath": "C:\\Users\\yashr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yashr\\Yash\\IL_Nysa\\Multilingual_Microservice\\Implementations\\Multilingual_Amazon\\server\\AWSTranslate.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\yashr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AWSSDK.Extensions.NETCore.Setup": {
+              "target": "Package",
+              "version": "[3.7.7, )"
+            },
+            "AWSSDK.TranscribeService": {
+              "target": "Package",
+              "version": "[3.7.201.38, )"
+            },
+            "AWSSDK.Translate": {
+              "target": "Package",
+              "version": "[3.7.200.8, )"
+            },
+            "Amazon.Lambda.Core": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "AngleSharp": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            },
+            "FireSharp": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Grpc.Core.Api": {
+              "target": "Package",
+              "version": "[2.57.0, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Collections.NonGeneric": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

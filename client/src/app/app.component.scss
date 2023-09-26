@@ -1,0 +1,204 @@
+.mainPage{
+    margin-top: 20px;
+    width: 80vw;
+}
+
+.messageDisplayed{
+    margin-top: 50px;
+    margin-left: 200px;
+    width: 75vw;
+    height: 6vh;
+    border: 1px solid rgb(240, 239, 239);
+    background-color: rgb(240, 239, 239);
+    color: red;
+    font-weight:600;
+    border-radius: 10px;
+}
+
+.messageDisplayed marquee{
+    position: relative;
+    top: 10px;
+}
+
+.mainLinks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ 
+}
+
+.singleItem{
+    border: 1px solid black;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    width: 10rem;
+    height: 3.2rem;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    font-size: 16px;
+    border-bottom: none;
+}
+
+.singleItem button{
+    text-align: center;
+    margin-left: 8px;
+    color: rgba(5, 5, 107, 0.815);
+}
+
+
+.singleItem:focus{
+    background-color: blue;
+    color:white;
+}
+
+.selectLanguage{
+    width: 6vw;
+    position: absolute;
+    top: 10px;
+    left: 850px;
+    
+}
+
+.form-select{
+    background-color: rgba(238, 113, 17, 0.858);
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.activeLi{
+    background-color: #1c5c95;
+}
+
+.activeLi button{
+    color: white;
+}
+
+.Tab--presentation{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-top: 15px;
+    height: 40vh;
+}
+
+.tab--header{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    column-gap: 50px;
+    background: linear-gradient(90deg, rgba(200,199,203,1) 0%, rgba(226,226,226,1) 44%, rgba(217,219,221,1) 64%, rgba(214,214,214,1) 100%);
+    width: 75vw;
+    height: 5vh;
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-left: 7px;
+}
+
+#Quote{
+    margin-left: 50px;
+}
+
+.tab--header--radios{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    column-gap: 30px;
+}
+
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .checkbox-label {
+    background-color: #4691e6;
+    width: 50px;
+    height: 26px;
+    font-size: 13px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+ 
+  
+  .checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+  }
+
+  .tab--content{
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .tab--content--head{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  .tab--content--main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+  }
+
+  .tab--content--main label{
+    margin-left: 100px;
+  }
+
+  .tab--content--main input{
+    width: 20vw;
+    outline: none;
+  }
+
+  .tab--content--main input:focus{
+    outline: none;
+  }
+
+  .vehicleDetails{
+    margin-left: 78px;
+    margin-top: 20px;
+    border-radius: 500px;
+    padding: 5px 30px;
+    background-image: linear-gradient(to right top, #2e435c, #263a56, #1e3250, #162949, #0f2143);
+  }
+
+  .select-wrapper {
+    width: 100px; /* Set the desired width of the dropdown */
+    overflow: hidden; /* Hide the content that overflows */
+ 
+}
+
+/* Style for the select element */
+select {
+    width: 100%;
+    height: 35px; /* Set the desired height of the dropdown */
+    overflow-y: auto; /* Add a vertical scrollbar when content exceeds the height */
+    box-sizing: border-box;
+}
