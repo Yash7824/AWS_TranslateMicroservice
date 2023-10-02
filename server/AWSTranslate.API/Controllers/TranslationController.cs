@@ -19,6 +19,7 @@ using RestSharp;
 using AngleSharp.Io;
 using Grpc.Core;
 
+
 namespace AWSTranslate.API.Controllers
 {
     [Route("api/[controller]")]
@@ -78,12 +79,15 @@ namespace AWSTranslate.API.Controllers
         [Route("Update-key")]
         public async Task<IActionResult> UpdateKey([FromBody] UpdateKey updateKey)
         {
-            var res = await client.GetAsync(updateKey.newKey);
+            var res = await client.GetAsync(updateKey.pathLanguage);
             Dictionary<string, string> data = JsonConvert.DeserializeObject<Dictionary<string, string>>(res.Body.ToString());
 
+            string value;
             if (data.ContainsKey(updateKey.existingKey))
             {
-                data[updateKey.existingKey] = updateKey.newKey;
+                value = data[updateKey.existingKey];
+                data.Remove(updateKey.existingKey);
+                data.Add(updateKey.newKey, value);            
             }
 
             var res2 = await client.UpdateAsync(updateKey.pathLanguage, data);
@@ -153,6 +157,31 @@ namespace AWSTranslate.API.Controllers
             
             return Ok(data);
             
+        }
+
+
+        // If we want to add more key-value pair to the already existing dictionary
+        // Since we are updating the existing dictionary we have to implement a PUT API
+        [HttpPut]
+        [Route("addKeyValuePair")]
+        public async Task<IActionResult> addKeyValuePair([FromBody] AddKeyValuePair addKeyValuePair)
+        {
+            var res = await client.GetAsync(addKeyValuePair.pathLanguage);
+            Dictionary<string, string> data = JsonConvert.DeserializeObject<Dictionary<string, string>>(res.Body.ToString());
+
+            foreach(KeyValuePair<string, string> entry in addKeyValuePair.toAddDictionary)
+            {
+
+                // If the key is not present in the data dictionary
+                if (!data.ContainsKey(entry.Key))
+                {
+                    data.Add(entry.Key, entry.Value);
+                }
+                
+            }
+
+            var res2 = await client.UpdateAsync(addKeyValuePair.pathLanguage, data);    
+            return Ok(data);
         }
 
 

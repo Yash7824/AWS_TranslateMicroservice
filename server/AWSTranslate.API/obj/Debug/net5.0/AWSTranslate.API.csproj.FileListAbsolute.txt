@@ -122,3 +122,17 @@ C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingu
 C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\obj\Debug\net5.0\AWSTranslate.API.pdb
 C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\obj\Debug\net5.0\AWSTranslate.API.genruntimeconfig.cache
 C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\obj\Debug\net5.0\ref\AWSTranslate.API.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\Npgsql.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\Humanizer.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll

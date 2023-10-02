@@ -18,6 +18,10 @@ using Amazon.Extensions.NETCore.Setup;
 using Amazon.Runtime;
 using FirebaseAdmin;
 using Google.Apis.Auth.OAuth2;
+using AWSTranslate.API.Data;
+using Microsoft.EntityFrameworkCore;
+using AWSTranslate.API.Mappings;
+using AutoMapper;
 
 namespace AWSTranslate.API
 {
@@ -33,7 +37,11 @@ namespace AWSTranslate.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
+
+            services.AddDbContext<PgAdminContext>(options => options.UseNpgsql(
+                Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddAutoMapper(typeof(AutoMapperProfile));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -57,6 +65,8 @@ namespace AWSTranslate.API
                                             .AllowAnyMethod();
                     });
             });
+
+           
 
 
         }
