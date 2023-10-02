@@ -48,7 +48,9 @@ After the Database is ready, any CRUD operation can be performed according to th
 
 ### Client-Side Implementation (Angular)
 1) Created an angular project and tried to make a replica of the `ICICI Lombard` Motor Insurance front-page.
-2) Making use of `HttpClientModule` and `Rxjs` for calling server apis.
+2) Making use of `HttpClientModule` and `Rxjs` for calling Server APIs.
+3) Implementing the Translation Functionality by making a Dropdown-Menu to select the language in which the web-page should get translated.
+4) Made use of bootstrap and custom css for designing purposes.
 
 ## Technology Used:
 
