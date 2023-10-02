@@ -2,6 +2,17 @@
 
 A Mulilingual-Microservice used to translate a web application into another language.
 
+## Architecture
+
+In this project, we are making use of `AWS-Translate` Package to create a POST API which would take a **list-of-words** and a **target-language-code** as a parameter. The List of words contains all the keys which has to be translated into different language whose code is also passed as a parameter. Upon calling the API, all the words present in the list get translated to the desired language and are stored in the respective table in Postgres. The table contains the keys and its corresponding value i.e the translated version of the key. The API is called only once and the data gets inserted into its respective table.
+After the Database is ready, any CRUD operation can be performed according to the business requirement. Some of the operations are:
+- Adding More Key-Value Pair to the table.
+- Updating any Key's Value.
+- Updating the key.
+- Deletion of any Key-Value tuple from the table.
+- Fetching All or some specific data based on **Id**, **Keys** or **Values**.
+
+
 ## Brief Description
 
 ### Cloud-Side Implementation (AWS)
@@ -30,14 +41,19 @@ A Mulilingual-Microservice used to translate a web application into another lang
 2) All Regional Languages table has to be created and then the business logic would be applied to them.
 3) ID, Key, Value : Columns
 
+#### Firebase
+1) Create a Project in Firebase and then create a realtime database.
+2) Storing the Data as HashMap or Dictionary in the database (Key-Value Pair).
+3) CRUD operations can be performed in this aswell through .NET
+
 ### Client-Side Implementation (Angular)
 1) Created an angular project and tried to make a replica of the `ICICI Lombard` Motor Insurance front-page.
 2) Making use of `HttpClientModule` and `Rxjs` for calling server apis.
 
 ## Technology Used:
-```
-Cloud-Provider : Amazon Web Service (AWS).
-Backend : Asp.NET Core.
-Database : Postgres/Firebase.
-Frontend : Angular.
-```
+
+- Cloud-Provider : Amazon Web Service (AWS).
+- Backend : Asp.NET Core.
+- Database : Postgres/Firebase.
+- Frontend : Angular.
+
