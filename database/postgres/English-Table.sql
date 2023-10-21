@@ -8,3 +8,5 @@ SELECT * FROM public."EnglishTranslatedWords" where "Key" = 'Quote';
 Select "Key" from public."EnglishTranslatedWords"
 group by "Key"
 Having Count("Key") > 1
+
+Select * from public."EnglishTranslatedWords" where "Key" != "Value";

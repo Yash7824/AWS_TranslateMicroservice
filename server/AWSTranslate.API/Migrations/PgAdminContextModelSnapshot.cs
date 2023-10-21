@@ -8,7 +8,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace AWSTranslate.API.Migrations
 {
-    [DbContext(typeof(PgAdminContext))]
+    [DbContext(typeof(Data.AppDbContext))]
     partial class PgAdminContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

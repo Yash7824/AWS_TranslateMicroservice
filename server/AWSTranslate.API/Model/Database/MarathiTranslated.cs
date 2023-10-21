@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace AWSTranslate.API.Model.Postgres
+namespace AWSTranslate.API.Model.Database
 {
-    public class TamilTranslated
+    public class MarathiTranslated
     {
         [Key]
         public Guid Id { get; set; }

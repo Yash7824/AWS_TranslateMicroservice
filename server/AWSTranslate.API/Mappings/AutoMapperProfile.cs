@@ -1,6 +1,6 @@
 ﻿using Amazon;
 using AutoMapper;
-using AWSTranslate.API.Model.Postgres;
+using AWSTranslate.API.Model.Database;
 
 namespace AWSTranslate.API.Mappings
 {

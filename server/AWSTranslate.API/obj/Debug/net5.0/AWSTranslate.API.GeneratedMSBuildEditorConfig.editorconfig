@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AWSTranslate.API
-build_property.ProjectDir = C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\
+build_property.ProjectDir = c:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\

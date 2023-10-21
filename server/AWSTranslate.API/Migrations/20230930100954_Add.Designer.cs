@@ -9,7 +9,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace AWSTranslate.API.Migrations
 {
-    [DbContext(typeof(PgAdminContext))]
+    [DbContext(typeof(Data.AppDbContext))]
     [Migration("20230930100954_Add")]
     partial class Add
     {

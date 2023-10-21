@@ -1,27 +1,18 @@
 using Amazon.Translate;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Amazon;
-using Amazon.TranscribeService;
 using Amazon.Extensions.NETCore.Setup;
 using Amazon.Runtime;
-using FirebaseAdmin;
-using Google.Apis.Auth.OAuth2;
-using AWSTranslate.API.Data;
 using Microsoft.EntityFrameworkCore;
 using AWSTranslate.API.Mappings;
-using AutoMapper;
+using AWSTranslate.API.Repositories.DL;
+using Amazon.Translate.Model;
+using AWSTranslate.API.Repositories.BL;
 
 namespace AWSTranslate.API
 {
@@ -38,9 +29,13 @@ namespace AWSTranslate.API
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<PgAdminContext>(options => options.UseNpgsql(
-                Configuration.GetConnectionString("DefaultConnection")));
-
+            services.AddDbContext<DbContext>(options =>
+            {
+                options.UseNpgsql(
+                Configuration.GetConnectionString("DbConn"));
+                options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+            });
+   
             services.AddAutoMapper(typeof(AutoMapperProfile));
 
             services.AddControllers();
@@ -66,8 +61,14 @@ namespace AWSTranslate.API
                     });
             });
 
-           
+            services.AddDistributedRedisCache(
+                options =>
+                {
+                    options.Configuration = "localhost:6379";
+                });
 
+            services.AddScoped<IDataRepository, DataRepository>();
+            services.AddScoped<IAwsRepository, AwsRepository>();
 
         }
 

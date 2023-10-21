@@ -1,11 +1,11 @@
-﻿using AWSTranslate.API.Model.Postgres;
+﻿using AWSTranslate.API.Model.Database;
 using Microsoft.EntityFrameworkCore;
 
 namespace AWSTranslate.API.Data
 {
-    public class PgAdminContext : DbContext
+    public class AppDbContext : DbContext
     {
-        public PgAdminContext(DbContextOptions<PgAdminContext> options): base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options): base(options)
         {
                 
         }

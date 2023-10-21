@@ -136,3 +136,10 @@ C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingu
 C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\System.Web.Mvc.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\System.Web.Razor.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\System.Web.Helpers.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\System.Web.WebPages.Deployment.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\System.Web.WebPages.dll
+C:\Users\yashr\Yash\IL_Nysa\Multilingual_Microservice\Implementations\Multilingual_Amazon\server\AWSTranslate.API\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll

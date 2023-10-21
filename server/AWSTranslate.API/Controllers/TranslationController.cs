@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Amazon;
 using Amazon.Translate;
 using Amazon.Translate.Model;
 using Microsoft.AspNetCore.Mvc;
@@ -10,14 +9,9 @@ using System.Collections.Generic;
 using System.Collections;
 using FireSharp.Interfaces;
 using FireSharp.Config;
-using FireSharp;
 using System.Linq;
 using Newtonsoft.Json;
-using Amazon.Runtime.Internal;
-using Microsoft.AspNetCore.Http;
-using RestSharp;
-using AngleSharp.Io;
-using Grpc.Core;
+
 
 
 namespace AWSTranslate.API.Controllers
